@@ -1,0 +1,3 @@
+#!/bin/bash
+
+py -i ./bin/run.py
