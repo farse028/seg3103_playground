@@ -1,6 +1,6 @@
 The code was modifed to run on a Windows OS. If you run Unix-based system (i.e Mac or Linux), change the following lines:
-- In newmath_py/bin/test: *export PYTHONPATH="$PYTHONPATH$(dirname "$0")/../src"* **TO** *export PYTHONPATH="$PYTHONPATH:$(dirname "$0")/../src"* (line 3)
-- In newmath_java/bin/compile: *javac -encoding UTF-8 --source-path test -d dist -cp "dist;lib/junit-platform-console-standalone-1.7.1.jar" test/*.java* **TO** *javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java* (line 7)
+- In *newmath_py/bin/test*: `export PYTHONPATH="$PYTHONPATH$(dirname "$0")/../src"` **TO** `export PYTHONPATH="$PYTHONPATH:$(dirname "$0")/../src"` (line 3)
+- In *newmath_java/bin/compile*: `javac -encoding UTF-8 --source-path test -d dist -cp "dist;lib/junit-platform-console-standalone-1.7.1.jar" test/*.java` **TO** `javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java` (line 7)
 
 Make sure you have Java, JavaSDK, Elixir and Python installed.
 
