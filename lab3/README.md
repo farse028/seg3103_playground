@@ -10,3 +10,5 @@ I added some tests for isEndOfMonth() such as if it's the 28th day of February o
 I got the code coverage pretty high with those new tests: 100% on Statement coverage and 95% on branch coverage. I could try to add more tests for 100% branch coverage but they become quite redundant at this point. 
 
 ![Jacoco tests coverage](assets/JacocoTestCoverage.png)
+
+As for refractoring the code, I didn't see much that I could do. I encapsulated the monthName array so that it can't be accessed or modified from the outside. I compacted isLeapYear() into a single return statement. I simplified isEndOfMonth() and isThirthyDayMonth() by removing if-else statements and only having a single return statement.
