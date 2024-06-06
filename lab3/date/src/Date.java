@@ -6,7 +6,7 @@ public class Date {
 	private int day;
 
 	/* String correspondent used for displaying months */
-	String[] monthNames = {
+	private static final String[] monthNames = {
 		"January", "February", "March",
 		"April", "May", "June",
 		"July", "August", "September",

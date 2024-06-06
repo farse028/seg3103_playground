@@ -8,3 +8,5 @@ For setDay(int), I added tests that check if a month has more than 31 days, if a
 I added some tests for isEndOfMonth() such as if it's the 28th day of February on a non-leap year and the 29th of February on a leap year.
 
 I got the code coverage pretty high with those new tests: 100% on Statement coverage and 95% on branch coverage. I could try to add more tests for 100% branch coverage but they become quite redundant at this point. 
+
+![Jacoco tests coverage](assets/JacocoTestCoverage.png)
