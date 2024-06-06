@@ -126,10 +126,7 @@ public class Date {
 	 * A leap year is divisible by 4 unless it is a century year. In that case, it must be divisible by 400.
 	 */
 	public boolean isLeapYear() {
-		if (year % 100 == 0) {
-			return year % 400 == 0;
-		}
-		return year % 4 == 0;
+		return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
 	}
 
 	public String toString() {
