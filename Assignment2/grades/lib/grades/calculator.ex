@@ -25,6 +25,11 @@ defmodule Grades.Calculator do
     |> Enum.count()
   end
 
+  #added avg_exam to calculate the average between the midterm and final
+  defp avg_exam(midterm, final) do
+    (midterm + final) / 2
+  end
+
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework =
       avg(homework) #refractored all code where the average was calculated
@@ -43,7 +48,7 @@ defmodule Grades.Calculator do
     avg_labs =
       avg(labs)
 
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg_exam(midterm, final) #refractored all code where avg_exams is calculated
 
     num_labs =
       count_valid_labs(labs) #refractored all code where num_labs was calculated
@@ -76,7 +81,7 @@ defmodule Grades.Calculator do
     avg_labs =
       avg(labs)
 
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg_exam(midterm, final)
 
     num_labs =
       count_valid_labs(labs)
