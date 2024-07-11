@@ -277,8 +277,7 @@ public void processNumbers() {
 }  // end if
     
     // "if" block is entered if now more than two numbers are being entered to
-    // be calculated
-    else if ( !morenums ) {      
+    // be calculated     
      
       num2 = Double.parseDouble(input);          //converts second num to double
       answer = calculate( oldoper, num1, num2 ); //calculate num1 and num2 with   
@@ -289,18 +288,11 @@ public void processNumbers() {
       if ( equals ){
         firstpress = true;          //if equal operator is pressed, firstpress returns to true
       }                  
-    } // end if
   
     // if more than two numbers are being inputted to calculate, this "if" block
     // is accessed
     else if (morenums) { 
-      
-      if ( equals ) {
-       
-        newoper = oper;
-        morenums = false;
-        firstpress = true;  // if equals is pressed set firstpress to false
-    } // end if             
+                  
     
       num3 = Double.parseDouble(input);
       answer = calculate( newoper, answer, num3 );      

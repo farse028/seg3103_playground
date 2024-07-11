@@ -52,3 +52,5 @@ The last bug is another `Condition has no effect`. This is because the if statem
 And here is a re-run of the analysis after I took care of all the bugs:
 
 ![Spotbugs_after](assets/spotbugs_after.png)
+
+The 19 hidden bugs are the same ones I just listed and they are marked as "dead bugs".
