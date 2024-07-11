@@ -48,3 +48,7 @@ This is because the if-else branches are redundant since they perform the same a
 The last bug is another `Condition has no effect`. This is because the if statement always produces the same results since the variable is always true when it reaches this point in the code. I would fix this bug by simplifying the code to make it clearer and more efficient. I have modified the code accordingly.
 
 ![bug20](assets/bug20.png)
+
+And here is a re-run of the analysis after I took care of all the bugs:
+
+![Spotbugs_after](assets/spotbugs_after.png)
